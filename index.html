@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza Idrees | Backend Developer</title>
+  <meta name="description" content="Backend Developer specializing in Node.js, Express.js, PostgreSQL, MongoDB, Redis, and AI integrations. Building production SaaS APIs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">HI<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting animate-in">Hello, I'm</p>
+        <h1 class="hero-name animate-in delay-1">Hamza Idrees</h1>
+        <h2 class="hero-title animate-in delay-2">Backend Developer</h2>
+        <p class="hero-description animate-in delay-3">
+          Building and maintaining production SaaS APIs that serve businesses across multiple countries.
+          Focused on writing performant, well-tested, and secure backend code.
+        </p>
+        <div class="hero-actions animate-in delay-4">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#experience" class="btn btn-outline">View My Work</a>
+        </div>
+        <div class="hero-stats animate-in delay-4">
+          <div class="stat">
+            <span class="stat-number">1+</span>
+            <span class="stat-label">Year Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">SaaS</span>
+            <span class="stat-label">Production APIs</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">Full Stack</span>
+            <span class="stat-label">Backend + Frontend</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Backend Developer with a degree in Software Engineering from
+            <strong>FAST-NUCES</strong>. I develop features across a multi-tenant system with a
+            dual-database architecture (PostgreSQL + MongoDB), integrate AI services for automated
+            content processing, and build reliable background job systems.
+          </p>
+          <p>
+            At <strong>Obenan</strong>, I work on a SaaS platform for business location management
+            and online reputation. I've developed AI-powered pipelines using OpenAI and Anthropic Claude,
+            automated scheduled jobs for data sync and report generation, and led the integration of
+            Microsoft Entra ID for enterprise SSO.
+          </p>
+          <p>
+            Focused on writing performant, well-tested, and secure backend code. Familiar with
+            frontend development using React and TypeScript.
+          </p>
+        </div>
+        <div class="about-info">
+          <div class="info-card">
+            <div class="info-icon">&#9997;</div>
+            <h3>Backend Systems</h3>
+            <p>RESTful APIs, BullMQ job queues, cron scheduling, JWT/OAuth authentication</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">&#9729;</div>
+            <h3>Cloud & AI</h3>
+            <p>AWS Lambda, S3, SQS, SES, OpenAI, Anthropic Claude, DeepL</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">&#9776;</div>
+            <h3>Databases</h3>
+            <p>PostgreSQL (Sequelize), MongoDB (Mongoose), Redis caching</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3 class="skill-category">Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">BullMQ</span>
+            <span class="tag">node-cron</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-category">Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Sequelize</span>
+            <span class="tag">Mongoose</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-category">Cloud</h3>
+          <div class="skill-tags">
+            <span class="tag">AWS Lambda</span>
+            <span class="tag">AWS S3</span>
+            <span class="tag">AWS SQS</span>
+            <span class="tag">AWS SES</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-category">Integrations</h3>
+          <div class="skill-tags">
+            <span class="tag">OpenAI</span>
+            <span class="tag">Anthropic Claude</span>
+            <span class="tag">DeepL</span>
+            <span class="tag">SendGrid</span>
+            <span class="tag">Google APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-category">Testing</h3>
+          <div class="skill-tags">
+            <span class="tag">Jest</span>
+            <span class="tag">Mocha</span>
+            <span class="tag">Supertest</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-category">Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Redux Toolkit</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-category">Auth & Security</h3>
+          <div class="skill-tags">
+            <span class="tag">JWT</span>
+            <span class="tag">OAuth 2.0</span>
+            <span class="tag">Microsoft Entra ID</span>
+            <span class="tag">Passport.js</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-category">Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">Swagger/OpenAPI</span>
+            <span class="tag">Postman</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Backend Developer</h3>
+              <span class="timeline-company">Obenan</span>
+              <span class="timeline-date">Dec 2024 - Present</span>
+            </div>
+            <p class="timeline-desc">SaaS platform for business location management and online reputation across Google, Facebook, and 20+ review platforms.</p>
+
+            <div class="exp-group">
+              <h4>API Development & Databases</h4>
+              <ul>
+                <li>Built and maintained RESTful API endpoints with Node.js, Express.js, and Swagger/OpenAPI</li>
+                <li>Developed features across a dual-database architecture: PostgreSQL (Sequelize ORM) and MongoDB (Mongoose)</li>
+                <li>Added Redis caching layers to high-traffic endpoints, eliminating redundant database queries</li>
+              </ul>
+            </div>
+
+            <div class="exp-group">
+              <h4>AI & Integrations</h4>
+              <ul>
+                <li>Developed AI-powered sentiment analysis and review response pipeline using OpenAI and Anthropic Claude</li>
+                <li>Implemented DeepL for multi-language translation, Google APIs for Business Profile sync</li>
+                <li>Built transactional email system using SendGrid and AWS SES with webhook event tracking</li>
+              </ul>
+            </div>
+
+            <div class="exp-group">
+              <h4>Background Processing</h4>
+              <ul>
+                <li>Developed and maintained 10+ BullMQ job queues with Redis for async processing</li>
+                <li>Automated scheduled jobs for report scheduling, Datashake review dumps, sentiment analysis batching, and two-way location listing sync</li>
+              </ul>
+            </div>
+
+            <div class="exp-group">
+              <h4>Auth, Cloud & Testing</h4>
+              <ul>
+                <li>Developed JWT auth, OAuth 2.0 (Google, Facebook), led Microsoft Entra ID integration for enterprise SSO</li>
+                <li>Implemented serverless functions on AWS Lambda, S3 (presigned URLs), SQS for messaging</li>
+                <li>Wrote unit and integration tests with Jest, Mocha, Supertest — contributing to 90%+ coverage</li>
+              </ul>
+            </div>
+
+            <div class="exp-group">
+              <h4>Frontend</h4>
+              <ul>
+                <li>Owned the Report Schedule Records module end-to-end with React, TypeScript, Tailwind CSS, NextUI</li>
+                <li>Delivered multi-dimensional filtering, debounced search, sortable pagination, and full CRUD with React Query and Redux Toolkit</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Bachelor in Software Engineering</h3>
+              <span class="timeline-company">FAST-NUCES</span>
+              <span class="timeline-date">Sep 2020 - Jun 2024</span>
+            </div>
+            <p class="timeline-desc">Studied software engineering with focus on web development, databases, and software architecture.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section-alt" id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-subtitle">What I can help you build</p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">{ }</div>
+          <h3>REST API Development</h3>
+          <p>Design and build scalable RESTful APIs with Node.js and Express.js, including versioning, validation, pagination, and Swagger documentation.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#9881;</div>
+          <h3>Database Design</h3>
+          <p>Schema design and optimization for PostgreSQL and MongoDB. Migrations, indexing, caching with Redis, and multi-tenant data architectures.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#9889;</div>
+          <h3>Background Job Systems</h3>
+          <p>Build reliable async processing with BullMQ and Redis. Scheduled tasks, job queues, retry logic, and real-time progress tracking via WebSockets.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#10047;</div>
+          <h3>AI Integration</h3>
+          <p>Integrate OpenAI, Anthropic Claude, and other AI services into your application for content generation, sentiment analysis, and NLP features.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#9729;</div>
+          <h3>Cloud & Serverless</h3>
+          <p>AWS Lambda for serverless functions, S3 for file storage, SQS for messaging. Deploy and manage cloud infrastructure for your application.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#128274;</div>
+          <h3>Auth & Third-Party Integration</h3>
+          <p>JWT authentication, OAuth 2.0, Microsoft Entra ID SSO, email delivery (SendGrid, AWS SES), and Google API integrations.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">&#128666;</div>
+            <div class="project-links">
+              <span class="project-badge">Academic</span>
+            </div>
+          </div>
+          <h3>ShipEase</h3>
+          <p>Logistics management platform connecting service providers, drivers, and users with real-time tracking and seamless communication.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+            <span>MUI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">&#127916;</div>
+            <div class="project-links">
+              <span class="project-badge">Academic</span>
+            </div>
+          </div>
+          <h3>MovieScape</h3>
+          <p>Social movie rating platform with user profiles, personalized recommendations, and a network-based movie discovery system.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MUI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Have a project in mind? Let's talk about how I can help.</p>
+      <div class="contact-grid">
+        <div class="contact-cards">
+
+          <a href="mailto:hamzaidrees083@gmail.com" class="contact-card">
+            <div class="contact-icon">&#9993;</div>
+            <h3>Email</h3>
+            <p>hamzaidrees083@gmail.com</p>
+          </a>
+
+          <a href="https://www.linkedin.com/in/hamzaidrees2002" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">in</div>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/hamzaidrees2002</p>
+          </a>
+
+          <a href="tel:+923067566528" class="contact-card">
+            <div class="contact-icon">&#9742;</div>
+            <h3>Phone</h3>
+            <p>+92 306 7566528</p>
+          </a>
+
+          <div class="contact-card">
+            <div class="contact-icon">&#9679;</div>
+            <h3>Location</h3>
+            <p>Pakistan</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Hamza Idrees. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
