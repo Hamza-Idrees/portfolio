@@ -81,14 +81,19 @@
             content processing, and build reliable background job systems.
           </p>
           <p>
-            At <strong>Obenan</strong>, I work on a SaaS platform for business location management
-            and online reputation. I've developed AI-powered pipelines using OpenAI and Anthropic Claude,
-            automated scheduled jobs for data sync and report generation, and led the integration of
-            Microsoft Entra ID for enterprise SSO.
+            At <strong>Obenan</strong>, I built features for a SaaS platform for business location
+            management and online reputation. I developed AI-powered pipelines using OpenAI and
+            Anthropic Claude, automated scheduled jobs for data sync and report generation, and led
+            the integration of Microsoft Entra ID for enterprise SSO.
+          </p>
+          <p>
+            Most recently at <strong>Global Software Consulting</strong>, I built <strong>Lumen</strong>
+            — a production-grade RAG system that lets clinic staff query ~5,000 patient records in
+            plain English using vector search, intent extraction, and real-time LLM streaming.
           </p>
           <p>
             Focused on writing performant, well-tested, and secure backend code. Familiar with
-            frontend development using React and TypeScript.
+            frontend development using React, Next.js, and TypeScript.
           </p>
         </div>
         <div class="about-info">
@@ -105,7 +110,7 @@
           <div class="info-card">
             <div class="info-icon">&#9776;</div>
             <h3>Databases</h3>
-            <p>PostgreSQL (Sequelize), MongoDB (Mongoose), Redis caching</p>
+            <p>PostgreSQL (Sequelize), MongoDB (Mongoose), Redis caching, ChromaDB (vector search)</p>
           </div>
         </div>
       </div>
@@ -124,6 +129,8 @@
             <span class="tag">JavaScript</span>
             <span class="tag">Node.js</span>
             <span class="tag">Express.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
             <span class="tag">BullMQ</span>
             <span class="tag">node-cron</span>
           </div>
@@ -135,6 +142,7 @@
             <span class="tag">PostgreSQL</span>
             <span class="tag">MongoDB</span>
             <span class="tag">Redis</span>
+            <span class="tag">ChromaDB</span>
             <span class="tag">Sequelize</span>
             <span class="tag">Mongoose</span>
           </div>
@@ -155,6 +163,7 @@
           <div class="skill-tags">
             <span class="tag">OpenAI</span>
             <span class="tag">Anthropic Claude</span>
+            <span class="tag">RAG Pipelines</span>
             <span class="tag">DeepL</span>
             <span class="tag">SendGrid</span>
             <span class="tag">Google APIs</span>
@@ -174,6 +183,7 @@
           <h3 class="skill-category">Frontend</h3>
           <div class="skill-tags">
             <span class="tag">React</span>
+            <span class="tag">Next.js 14</span>
             <span class="tag">TypeScript</span>
             <span class="tag">Tailwind CSS</span>
             <span class="tag">Redux Toolkit</span>
@@ -215,7 +225,7 @@
             <div class="timeline-header">
               <h3>Backend Developer</h3>
               <span class="timeline-company">Obenan</span>
-              <span class="timeline-date">Dec 2024 - Present</span>
+              <span class="timeline-date">Dec 2024 - Mar 2026</span>
             </div>
             <p class="timeline-desc">SaaS platform for business location management and online reputation across Google, Facebook, and 20+ review platforms.</p>
 
@@ -259,6 +269,43 @@
               <ul>
                 <li>Owned the Report Schedule Records module end-to-end with React, TypeScript, Tailwind CSS, NextUI</li>
                 <li>Delivered multi-dimensional filtering, debounced search, sortable pagination, and full CRUD with React Query and Redux Toolkit</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Backend Developer</h3>
+              <span class="timeline-company">Global Software Consulting</span>
+              <span class="timeline-date">Apr 2026 - May 2026</span>
+            </div>
+            <p class="timeline-desc">Built Lumen — a production-grade RAG system enabling clinic staff to query ~5,000 patient records in plain English and receive grounded, real-time cited answers.</p>
+
+            <div class="exp-group">
+              <h4>RAG Pipeline & AI Integration</h4>
+              <ul>
+                <li>Designed an end-to-end RAG pipeline: GPT-4o-mini for structured intent extraction, text-embedding-ada-002 for vector embeddings, GPT-4.1-mini for streaming LLM responses via SSE</li>
+                <li>Built a 20+ filter query parser extracting condition, age, doctor, dates, billing range, blood type, and more from free-text queries for precise ChromaDB lookups</li>
+                <li>Integrated ChromaDB as a file-persisted vector store ingesting 5,000 patient records as natural-language embeddings with rich metadata</li>
+              </ul>
+            </div>
+
+            <div class="exp-group">
+              <h4>Backend & API Development</h4>
+              <ul>
+                <li>Developed RESTful FastAPI endpoints for chat (SSE streaming), CSV ingestion, health checks, stats, and PDF report export with admin token authentication</li>
+                <li>Implemented cosine similarity thresholding and a fallback mechanism to prevent hallucination when retrieved context is insufficient</li>
+              </ul>
+            </div>
+
+            <div class="exp-group">
+              <h4>Frontend</h4>
+              <ul>
+                <li>Built a Next.js 14 App Router frontend with real-time streaming chat, citation cards linking answers to exact patient rows, and a PDF export feature</li>
               </ul>
             </div>
 
@@ -333,6 +380,25 @@
     <div class="container">
       <h2 class="section-title">Projects</h2>
       <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">&#128203;</div>
+            <div class="project-links">
+              <span class="project-badge">Contract</span>
+            </div>
+          </div>
+          <h3>Lumen — Medical Records RAG System</h3>
+          <p>Production-grade RAG web app letting clinic staff query ~5,000 patient records in plain English. Features real-time LLM streaming, vector search, 20+ metadata filters, citation cards, and PDF export.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>ChromaDB</span>
+            <span>OpenAI</span>
+            <span>Next.js 14</span>
+            <span>TypeScript</span>
+          </div>
+        </div>
 
         <div class="project-card">
           <div class="project-header">
