@@ -1,211 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hamza Idrees | Backend Developer</title>
-  <meta name="description" content="Hamza Idrees — Backend Developer specializing in Node.js, Express.js, PostgreSQL, MongoDB, Redis, AWS, and AI integrations. Building production SaaS APIs.">
+  <meta name="description" content="Hamza Idrees — Backend Developer specializing in Node.js, Python, PostgreSQL, MongoDB, Redis, AWS, and AI integrations. Building production SaaS APIs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Navigation -->
+
+  <!-- ===== NAVIGATION ===== -->
   <nav class="nav" id="nav">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">HI<span class="accent">.</span></a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">HI<span class="dot">.</span></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-cv-btn cv-download" aria-label="Download CV">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          CV
+        </button>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+        <button class="hamburger" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero -->
+  <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="container">
-      <div class="hero-content">
-        <p class="hero-greeting animate-in">Hello, I'm</p>
-        <h1 class="hero-name animate-in delay-1">Hamza Idrees</h1>
-        <h2 class="hero-title animate-in delay-2">Backend Developer</h2>
-        <p class="hero-description animate-in delay-3">
-          Building and maintaining production SaaS APIs that serve businesses across multiple countries.
-          Focused on writing performant, well-tested, and secure backend code.
-        </p>
-        <div class="hero-actions animate-in delay-4">
-          <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <a href="#experience" class="btn btn-outline">View My Work</a>
+    <div class="hero-grid-bg"></div>
+    <div class="container hero-container">
+
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="avail-badge animate-in">
+          <span class="pulse-dot"></span>
+          Available for opportunities
         </div>
+
+        <p class="hero-eyebrow animate-in delay-1">Hello, I'm</p>
+        <h1 class="hero-name animate-in delay-2">Hamza<br>Idrees</h1>
+        <div class="hero-role animate-in delay-3">
+          <span class="role-text">Backend Developer</span><span class="cursor-bar"></span>
+        </div>
+
+        <div class="hero-chips animate-in delay-3">
+          <span class="chip">Node.js</span>
+          <span class="chip">Python</span>
+          <span class="chip chip-ai">OpenAI</span>
+          <span class="chip chip-ai">RAG Pipelines</span>
+          <span class="chip chip-ai">LLM Integration</span>
+          <span class="chip">AWS</span>
+        </div>
+
+        <p class="hero-desc animate-in delay-4">
+          Building production SaaS APIs serving <strong>400+ businesses across 1,000+ locations</strong>
+          in 10+ countries. Specialized in AI integrations and scalable backend systems.
+        </p>
+
+        <div class="hero-btns animate-in delay-4">
+          <a href="#contact" class="btn-prim">Get In Touch</a>
+          <button class="btn-sec cv-download">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </button>
+        </div>
+
         <div class="hero-stats animate-in delay-4">
-          <div class="stat">
-            <span class="stat-number">1+</span>
-            <span class="stat-label">Year Experience</span>
+          <div class="hstat">
+            <span class="hstat-num">1.5+</span>
+            <span class="hstat-lbl">Years Exp.</span>
           </div>
-          <div class="stat">
-            <span class="stat-number">SaaS</span>
-            <span class="stat-label">Production APIs</span>
+          <div class="hstat-divider"></div>
+          <div class="hstat">
+            <span class="hstat-num">400+</span>
+            <span class="hstat-lbl">Businesses</span>
           </div>
-          <div class="stat">
-            <span class="stat-number">Full Stack</span>
-            <span class="stat-label">Backend + Frontend</span>
+          <div class="hstat-divider"></div>
+          <div class="hstat">
+            <span class="hstat-num">1,000+</span>
+            <span class="hstat-lbl">Locations</span>
           </div>
         </div>
       </div>
+
+      <!-- Right: Terminal -->
+      <div class="hero-right animate-in delay-3">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="term-dots">
+              <span class="tdot tdot-red"></span>
+              <span class="tdot tdot-yellow"></span>
+              <span class="tdot tdot-green"></span>
+            </div>
+            <span class="term-title">~/hamza — node</span>
+          </div>
+          <div class="terminal-body">
+            <div class="term-line"><span class="t-prompt">$</span> <span class="t-cmd">node lumen.js</span></div>
+            <div class="term-line t-comment">// RAG pipeline initializing...</div>
+            <div class="term-line"></div>
+            <div class="term-line"><span class="t-key">const</span> pipeline = <span class="t-fn">buildRAGPipeline</span>({</div>
+            <div class="term-line t-indent"><span class="t-key">model</span>: <span class="t-str">'gpt-4.1-mini'</span>,</div>
+            <div class="term-line t-indent"><span class="t-key">vectorStore</span>: <span class="t-str">'chromadb'</span>,</div>
+            <div class="term-line t-indent"><span class="t-key">records</span>: <span class="t-num">5000</span>,</div>
+            <div class="term-line t-indent"><span class="t-key">filters</span>: <span class="t-num">20</span><span class="t-comment">+ metadata</span>,</div>
+            <div class="term-line t-indent"><span class="t-key">streaming</span>: <span class="t-bool">true</span>,</div>
+            <div class="term-line">});</div>
+            <div class="term-line"></div>
+            <div class="term-line"><span class="t-success">✓</span> Vector store loaded — <span class="t-num">5,000</span> records</div>
+            <div class="term-line"><span class="t-success">✓</span> Intent extraction ready</div>
+            <div class="term-line"><span class="t-success">✓</span> SSE streaming enabled</div>
+            <div class="term-line"><span class="t-success">✓</span> Pipeline ready</div>
+            <div class="term-line"></div>
+            <div class="term-line"><span class="t-prompt">$</span> <span class="term-cursor">█</span></div>
+          </div>
+        </div>
+
+        <div class="floating-cards">
+          <div class="fcard fcard-1">
+            <span class="fcard-icon">⚡</span>
+            <div>
+              <div class="fcard-val">40,000+</div>
+              <div class="fcard-lbl">Reviews / Lambda run</div>
+            </div>
+          </div>
+          <div class="fcard fcard-2">
+            <span class="fcard-icon">🤖</span>
+            <div>
+              <div class="fcard-val">100+ posts</div>
+              <div class="fcard-lbl">Generated in &lt;30s</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="scroll-indicator">
-      <div class="mouse"></div>
-    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+    </a>
   </section>
 
-  <!-- About -->
+  <!-- ===== ABOUT ===== -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
+      <div class="sec-label">01 — About</div>
+      <div class="about-layout">
+        <div class="about-headline">
+          <h2>I build backends<br>that <span class="grad-text">actually scale.</span></h2>
+        </div>
+        <div class="about-body">
           <p>
-            I'm a Backend Developer with a degree in Software Engineering from
-            <strong>FAST-NUCES</strong>. I develop features across a multi-tenant system with a
-            dual-database architecture (PostgreSQL + MongoDB), integrate AI services for automated
-            content processing, and build reliable background job systems.
+            Backend Developer with a degree in Software Engineering from <strong>FAST-NUCES</strong>.
+            I develop features across multi-tenant systems with dual-database architectures, integrate
+            AI services for automated content processing, and build reliable background job systems.
           </p>
           <p>
-            At <strong>Obenan</strong>, I built features for a SaaS platform for business location
-            management and online reputation. I developed AI-powered pipelines using OpenAI and
-            Anthropic Claude, automated scheduled jobs for data sync and report generation, and led
-            the integration of Microsoft Entra ID for enterprise SSO.
+            At <strong>Obenan</strong>, I built features for a SaaS platform serving <strong>400+ businesses
+            across 1,000+ locations</strong>. I engineered a Lambda function fetching <strong>40,000+ reviews
+            within AWS's 15-minute limit</strong>, and built a batched OpenAI pipeline processing
+            <strong>100+ posts in under 30 seconds</strong>.
           </p>
           <p>
             Most recently at <strong>Global Software Consulting</strong>, I built <strong>Lumen</strong>
             — a production-grade RAG system that lets clinic staff query ~5,000 patient records in
             plain English using vector search, intent extraction, and real-time LLM streaming.
           </p>
-          <p>
-            Focused on writing performant, well-tested, and secure backend code. Familiar with
-            frontend development using React, Next.js, and TypeScript.
-          </p>
-        </div>
-        <div class="about-info">
-          <div class="info-card">
-            <div class="info-icon">&#9997;</div>
-            <h3>Backend Systems</h3>
-            <p>RESTful APIs, BullMQ job queues, cron scheduling, JWT/OAuth authentication</p>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">&#9729;</div>
-            <h3>Cloud & AI</h3>
-            <p>AWS Lambda, S3, SQS, SES, OpenAI, Anthropic Claude, DeepL</p>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">&#9776;</div>
-            <h3>Databases</h3>
-            <p>PostgreSQL (Sequelize), MongoDB (Mongoose), Redis caching, ChromaDB (vector search)</p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-icon">🎓</span>
+              <div>
+                <div class="meta-title">FAST-NUCES</div>
+                <div class="meta-sub">BSc Software Engineering · 2020–2024</div>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">📍</span>
+              <div>
+                <div class="meta-title">Pakistan</div>
+                <div class="meta-sub">Open to remote worldwide</div>
+              </div>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🧪</span>
+              <div>
+                <div class="meta-title">90%+ Test Coverage</div>
+                <div class="meta-sub">Jest · Mocha · Supertest</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
+  <!-- ===== SKILLS ===== -->
   <section class="section section-alt" id="skills">
     <div class="container">
-      <h2 class="section-title">Tech Stack</h2>
-      <div class="skills-grid">
+      <div class="sec-label">02 — Tech Stack</div>
+      <h2 class="sec-title">What I work with</h2>
+      <div class="skills-layout">
 
-        <div class="skill-card">
-          <h3 class="skill-category">Backend</h3>
-          <div class="skill-tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Express.js</span>
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">BullMQ</span>
-            <span class="tag">node-cron</span>
+        <div class="skill-row reveal">
+          <div class="skill-row-label">Backend</div>
+          <div class="skill-pills">
+            <span class="spill spill-primary">JavaScript</span>
+            <span class="spill spill-primary">Node.js</span>
+            <span class="spill spill-primary">Express.js</span>
+            <span class="spill spill-primary">Python</span>
+            <span class="spill spill-primary">FastAPI</span>
+            <span class="spill">BullMQ</span>
+            <span class="spill">node-cron</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h3 class="skill-category">Databases</h3>
-          <div class="skill-tags">
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">MongoDB</span>
-            <span class="tag">Redis</span>
-            <span class="tag">ChromaDB</span>
-            <span class="tag">Sequelize</span>
-            <span class="tag">Mongoose</span>
+        <div class="skill-row reveal">
+          <div class="skill-row-label">Databases</div>
+          <div class="skill-pills">
+            <span class="spill spill-primary">PostgreSQL</span>
+            <span class="spill spill-primary">MongoDB</span>
+            <span class="spill spill-primary">Redis</span>
+            <span class="spill">ChromaDB</span>
+            <span class="spill">Sequelize</span>
+            <span class="spill">Mongoose</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h3 class="skill-category">Cloud</h3>
-          <div class="skill-tags">
-            <span class="tag">AWS Lambda</span>
-            <span class="tag">AWS S3</span>
-            <span class="tag">AWS SQS</span>
-            <span class="tag">AWS SES</span>
+        <div class="skill-row reveal">
+          <div class="skill-row-label">AI & Integrations</div>
+          <div class="skill-pills">
+            <span class="spill spill-ai">OpenAI</span>
+            <span class="spill spill-ai">Anthropic Claude</span>
+            <span class="spill spill-ai">RAG Pipelines</span>
+            <span class="spill spill-ai">LLM Streaming (SSE)</span>
+            <span class="spill">DeepL</span>
+            <span class="spill">SendGrid</span>
+            <span class="spill">Google APIs</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h3 class="skill-category">Integrations</h3>
-          <div class="skill-tags">
-            <span class="tag">OpenAI</span>
-            <span class="tag">Anthropic Claude</span>
-            <span class="tag">RAG Pipelines</span>
-            <span class="tag">DeepL</span>
-            <span class="tag">SendGrid</span>
-            <span class="tag">Google APIs</span>
+        <div class="skill-row reveal">
+          <div class="skill-row-label">Cloud</div>
+          <div class="skill-pills">
+            <span class="spill spill-primary">AWS Lambda</span>
+            <span class="spill spill-primary">AWS S3</span>
+            <span class="spill spill-primary">AWS SQS</span>
+            <span class="spill">AWS SES</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h3 class="skill-category">Testing</h3>
-          <div class="skill-tags">
-            <span class="tag">Jest</span>
-            <span class="tag">Mocha</span>
-            <span class="tag">Supertest</span>
+        <div class="skill-row reveal">
+          <div class="skill-row-label">Auth & Security</div>
+          <div class="skill-pills">
+            <span class="spill">JWT</span>
+            <span class="spill">OAuth 2.0</span>
+            <span class="spill">Microsoft Entra ID</span>
+            <span class="spill">Passport.js</span>
+            <span class="spill">Rate Limiting</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h3 class="skill-category">Frontend</h3>
-          <div class="skill-tags">
-            <span class="tag">React</span>
-            <span class="tag">Next.js 14</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Tailwind CSS</span>
-            <span class="tag">Redux Toolkit</span>
+        <div class="skill-row reveal">
+          <div class="skill-row-label">Frontend</div>
+          <div class="skill-pills">
+            <span class="spill">React</span>
+            <span class="spill">Next.js 14</span>
+            <span class="spill">TypeScript</span>
+            <span class="spill">Tailwind CSS</span>
+            <span class="spill">Redux Toolkit</span>
           </div>
         </div>
 
-        <div class="skill-card">
-          <h3 class="skill-category">Auth & Security</h3>
-          <div class="skill-tags">
-            <span class="tag">JWT</span>
-            <span class="tag">OAuth 2.0</span>
-            <span class="tag">Microsoft Entra ID</span>
-            <span class="tag">Passport.js</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <h3 class="skill-category">Tools</h3>
-          <div class="skill-tags">
-            <span class="tag">Git</span>
-            <span class="tag">Swagger/OpenAPI</span>
-            <span class="tag">Postman</span>
+        <div class="skill-row reveal">
+          <div class="skill-row-label">Testing & Tools</div>
+          <div class="skill-pills">
+            <span class="spill">Jest</span>
+            <span class="spill">Mocha</span>
+            <span class="spill">Supertest</span>
+            <span class="spill">Swagger / OpenAPI</span>
+            <span class="spill">Postman</span>
+            <span class="spill">Git</span>
           </div>
         </div>
 
@@ -213,114 +302,104 @@
     </div>
   </section>
 
-  <!-- Experience -->
+  <!-- ===== EXPERIENCE ===== -->
   <section class="section" id="experience">
     <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <div class="timeline">
+      <div class="sec-label">03 — Experience</div>
+      <h2 class="sec-title">Where I've worked</h2>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Backend Developer</h3>
-              <span class="timeline-company">Obenan</span>
-              <span class="timeline-date">Dec 2024 - Mar 2026</span>
+      <div class="exp-layout">
+
+        <div class="exp-card reveal">
+          <div class="exp-card-header">
+            <div class="exp-meta">
+              <div class="exp-company-badge">Obenan</div>
+              <span class="exp-type">Onsite</span>
             </div>
-            <p class="timeline-desc">SaaS platform for business location management and online reputation across Google, Facebook, and 20+ review platforms.</p>
+            <div class="exp-role-line">
+              <h3>Backend Developer</h3>
+              <span class="exp-date">Dec 2024 – Mar 2026</span>
+            </div>
+            <p class="exp-desc">SaaS platform for business location management and online reputation across Google, Facebook, and 20+ review platforms. Serving 400+ businesses across 1,000+ locations in 10+ countries.</p>
+          </div>
 
+          <div class="exp-groups">
             <div class="exp-group">
               <h4>API Development & Databases</h4>
               <ul>
                 <li>Built and maintained RESTful API endpoints with Node.js, Express.js, and Swagger/OpenAPI</li>
-                <li>Developed features across a dual-database architecture: PostgreSQL (Sequelize ORM) and MongoDB (Mongoose)</li>
+                <li>Developed across dual-database architecture: PostgreSQL (Sequelize, 100+ models) and MongoDB (Mongoose)</li>
                 <li>Added Redis caching layers to high-traffic endpoints, eliminating redundant database queries</li>
               </ul>
             </div>
-
             <div class="exp-group">
-              <h4>AI & Integrations</h4>
+              <h4>AI & Third-Party Integrations</h4>
               <ul>
-                <li>Developed AI-powered sentiment analysis and review response pipeline using OpenAI and Anthropic Claude</li>
-                <li>Implemented DeepL for multi-language translation, Google APIs for Business Profile sync</li>
-                <li>Built transactional email system using SendGrid and AWS SES with webhook event tracking</li>
+                <li>Built AI-powered sentiment analysis and review response pipeline using OpenAI and Anthropic Claude</li>
+                <li>Batched OpenAI post description pipeline: <strong>100+ posts in under 30 seconds</strong>, reducing generation time by 90%+</li>
+                <li>Integrated DeepL for multi-language translation, Google APIs for Business Profile sync</li>
+                <li>Built transactional email system with SendGrid and AWS SES including webhook event tracking</li>
               </ul>
             </div>
-
             <div class="exp-group">
-              <h4>Background Processing</h4>
+              <h4>Background Processing & Cloud</h4>
               <ul>
-                <li>Developed and maintained 10+ BullMQ job queues with Redis for async processing</li>
-                <li>Automated scheduled jobs for report scheduling, Datashake review dumps, sentiment analysis batching, and two-way location listing sync</li>
+                <li>Developed and maintained 10+ BullMQ queues with Redis for async processing</li>
+                <li>Lambda function fetching <strong>40,000+ reviews within AWS's 15-minute execution limit</strong> via optimized batching</li>
+                <li>Managed AWS S3 file storage (presigned URLs) and AWS SQS async messaging</li>
               </ul>
             </div>
-
             <div class="exp-group">
-              <h4>Auth, Cloud & Testing</h4>
+              <h4>Auth, Testing & Frontend</h4>
               <ul>
-                <li>Developed JWT auth, OAuth 2.0 (Google, Facebook), led Microsoft Entra ID integration for enterprise SSO</li>
-                <li>Implemented serverless functions on AWS Lambda, S3 (presigned URLs), SQS for messaging</li>
-                <li>Wrote unit and integration tests with Jest, Mocha, Supertest — contributing to 90%+ coverage</li>
+                <li>JWT auth, OAuth 2.0 (Google, Facebook), led Microsoft Entra ID integration for enterprise SSO</li>
+                <li>Unit and integration tests with Jest, Mocha, Supertest — contributing to <strong>90%+ coverage</strong></li>
+                <li>Owned Report Schedule Records module end-to-end: React, TypeScript, Tailwind, NextUI, Vite</li>
               </ul>
             </div>
+          </div>
 
-            <div class="exp-group">
-              <h4>Frontend</h4>
-              <ul>
-                <li>Owned the Report Schedule Records module end-to-end with React, TypeScript, Tailwind CSS, NextUI</li>
-                <li>Delivered multi-dimensional filtering, debounced search, sortable pagination, and full CRUD with React Query and Redux Toolkit</li>
-              </ul>
-            </div>
-
+          <div class="exp-stack">
+            <span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>MongoDB</span>
+            <span>Redis</span><span>BullMQ</span><span>AWS Lambda/S3/SQS</span><span>React</span><span>TypeScript</span>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Backend Developer</h3>
-              <span class="timeline-company">Global Software Consulting</span>
-              <span class="timeline-date">Apr 2026 - May 2026</span>
+        <div class="exp-card exp-card-current reveal">
+          <div class="exp-card-header">
+            <div class="exp-meta">
+              <div class="exp-company-badge exp-company-current">Global Software Consulting</div>
+              <span class="exp-type exp-type-current">Onsite · Current</span>
             </div>
-            <p class="timeline-desc">Built Lumen — a production-grade RAG system enabling clinic staff to query ~5,000 patient records in plain English and receive grounded, real-time cited answers.</p>
+            <div class="exp-role-line">
+              <h3>Backend Developer</h3>
+              <span class="exp-date">Apr 2026 – Present</span>
+            </div>
+            <p class="exp-desc">Built Lumen — a production-grade RAG system enabling clinic staff to query ~5,000 patient records in plain English and receive grounded, real-time cited answers.</p>
+          </div>
 
+          <div class="exp-groups">
             <div class="exp-group">
               <h4>RAG Pipeline & AI Integration</h4>
               <ul>
-                <li>Designed an end-to-end RAG pipeline: GPT-4o-mini for structured intent extraction, text-embedding-ada-002 for vector embeddings, GPT-4.1-mini for streaming LLM responses via SSE</li>
-                <li>Built a 20+ filter query parser extracting condition, age, doctor, dates, billing range, blood type, and more from free-text queries for precise ChromaDB lookups</li>
-                <li>Integrated ChromaDB as a file-persisted vector store ingesting 5,000 patient records as natural-language embeddings with rich metadata</li>
+                <li>End-to-end RAG pipeline: GPT-4o-mini for intent extraction, text-embedding-ada-002 for vectors, GPT-4.1-mini for SSE streaming</li>
+                <li>Built a 20+ filter query parser extracting condition, age, doctor, dates, billing range, blood type from free-text</li>
+                <li>ChromaDB vector store ingesting 5,000 patient records with hybrid semantic + metadata retrieval</li>
               </ul>
             </div>
-
             <div class="exp-group">
-              <h4>Backend & API Development</h4>
+              <h4>Backend, API & Frontend</h4>
               <ul>
-                <li>Developed RESTful FastAPI endpoints for chat (SSE streaming), CSV ingestion, health checks, stats, and PDF report export with admin token authentication</li>
-                <li>Implemented cosine similarity thresholding and a fallback mechanism to prevent hallucination when retrieved context is insufficient</li>
+                <li>FastAPI endpoints for chat (SSE), CSV ingestion, health checks, stats, and PDF export</li>
+                <li>Cosine similarity thresholding with "don't know" fallback to prevent hallucination</li>
+                <li>Next.js 14 App Router frontend with real-time streaming chat, citation cards, and PDF export</li>
               </ul>
             </div>
-
-            <div class="exp-group">
-              <h4>Frontend</h4>
-              <ul>
-                <li>Built a Next.js 14 App Router frontend with real-time streaming chat, citation cards linking answers to exact patient rows, and a PDF export feature</li>
-              </ul>
-            </div>
-
           </div>
-        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <h3>Bachelor in Software Engineering</h3>
-              <span class="timeline-company">FAST-NUCES</span>
-              <span class="timeline-date">Sep 2020 - Jun 2024</span>
-            </div>
-            <p class="timeline-desc">Studied software engineering with focus on web development, databases, and software architecture.</p>
+          <div class="exp-stack">
+            <span>Python</span><span>FastAPI</span><span>ChromaDB</span><span>OpenAI</span>
+            <span>SSE</span><span>Next.js 14</span><span>TypeScript</span><span>Tailwind CSS</span>
           </div>
         </div>
 
@@ -328,108 +407,64 @@
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="section section-alt" id="services">
+  <!-- ===== PROJECTS ===== -->
+  <section class="section section-alt" id="projects">
     <div class="container">
-      <h2 class="section-title">Services</h2>
-      <p class="section-subtitle">What I can help you build</p>
-      <div class="services-grid">
+      <div class="sec-label">04 — Projects</div>
+      <h2 class="sec-title">Things I've built</h2>
 
-        <div class="service-card">
-          <div class="service-icon">{ }</div>
-          <h3>REST API Development</h3>
-          <p>Design and build scalable RESTful APIs with Node.js and Express.js, including versioning, validation, pagination, and Swagger documentation.</p>
-        </div>
+      <div class="bento-grid">
 
-        <div class="service-card">
-          <div class="service-icon">&#9881;</div>
-          <h3>Database Design</h3>
-          <p>Schema design and optimization for PostgreSQL and MongoDB. Migrations, indexing, caching with Redis, and multi-tenant data architectures.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">&#9889;</div>
-          <h3>Background Job Systems</h3>
-          <p>Build reliable async processing with BullMQ and Redis. Scheduled tasks, job queues, retry logic, and real-time progress tracking via WebSockets.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">&#10047;</div>
-          <h3>AI Integration</h3>
-          <p>Integrate OpenAI, Anthropic Claude, and other AI services into your application for content generation, sentiment analysis, and NLP features.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">&#9729;</div>
-          <h3>Cloud & Serverless</h3>
-          <p>AWS Lambda for serverless functions, S3 for file storage, SQS for messaging. Deploy and manage cloud infrastructure for your application.</p>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">&#128274;</div>
-          <h3>Auth & Third-Party Integration</h3>
-          <p>JWT authentication, OAuth 2.0, Microsoft Entra ID SSO, email delivery (SendGrid, AWS SES), and Google API integrations.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">&#128203;</div>
-            <div class="project-links">
-              <span class="project-badge">Contract</span>
-            </div>
+        <!-- Featured -->
+        <div class="bento-card bento-featured reveal">
+          <div class="bento-header">
+            <div class="bento-icon">🧠</div>
+            <span class="bento-badge bento-badge-ai">AI / RAG</span>
           </div>
           <h3>Lumen — Medical Records RAG System</h3>
-          <p>Production-grade RAG web app letting clinic staff query ~5,000 patient records in plain English. Features real-time LLM streaming, vector search, 20+ metadata filters, citation cards, and PDF export.</p>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>ChromaDB</span>
-            <span>OpenAI</span>
-            <span>Next.js 14</span>
-            <span>TypeScript</span>
+          <p>Production-grade RAG web app letting clinic staff query ~5,000 patient records in plain English. Features real-time LLM streaming via SSE, vector search with 20+ metadata filters, citation cards linking each answer to exact patient rows, and PDF export.</p>
+          <div class="bento-highlights">
+            <div class="bento-hl">
+              <span class="bhl-val">5,000</span>
+              <span class="bhl-lbl">Patient records</span>
+            </div>
+            <div class="bento-hl">
+              <span class="bhl-val">20+</span>
+              <span class="bhl-lbl">Smart filters</span>
+            </div>
+            <div class="bento-hl">
+              <span class="bhl-val">Real-time</span>
+              <span class="bhl-lbl">LLM streaming</span>
+            </div>
+          </div>
+          <div class="bento-tech">
+            <span>Python</span><span>FastAPI</span><span>ChromaDB</span>
+            <span>OpenAI</span><span>Next.js 14</span><span>TypeScript</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">&#128666;</div>
-            <div class="project-links">
-              <span class="project-badge">Academic</span>
-            </div>
+        <!-- Small cards -->
+        <div class="bento-card reveal">
+          <div class="bento-header">
+            <div class="bento-icon">📦</div>
+            <span class="bento-badge">Academic</span>
           </div>
           <h3>ShipEase</h3>
-          <p>Logistics management platform connecting service providers, drivers, and users with real-time tracking and seamless communication.</p>
-          <div class="project-tech">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>PostgreSQL</span>
-            <span>MUI</span>
+          <p>Logistics management platform connecting service providers, drivers, and users with real-time shipment tracking, role-based dashboards, and seamless communication.</p>
+          <div class="bento-tech">
+            <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>MUI</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <div class="project-icon">&#127916;</div>
-            <div class="project-links">
-              <span class="project-badge">Academic</span>
-            </div>
+        <div class="bento-card reveal">
+          <div class="bento-header">
+            <div class="bento-icon">🎬</div>
+            <span class="bento-badge">Academic</span>
           </div>
           <h3>MovieScape</h3>
           <p>Social movie rating platform with user profiles, personalized recommendations, and a network-based movie discovery system.</p>
-          <div class="project-tech">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MUI</span>
+          <div class="bento-tech">
+            <span>React</span><span>Node.js</span><span>MUI</span>
           </div>
         </div>
 
@@ -437,47 +472,85 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section section-alt" id="contact">
+  <!-- ===== SERVICES ===== -->
+  <section class="section" id="services">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Have a project in mind? Let's talk about how I can help.</p>
-      <div class="contact-grid">
-        <div class="contact-cards">
+      <div class="sec-label">05 — Services</div>
+      <h2 class="sec-title">What I can build for you</h2>
+      <div class="services-grid">
 
-          <a href="mailto:hamzaidrees083@gmail.com" class="contact-card">
-            <div class="contact-icon">&#9993;</div>
-            <h3>Email</h3>
-            <p>hamzaidrees083@gmail.com</p>
-          </a>
-
-          <a href="https://www.linkedin.com/in/hamzaidrees2002" target="_blank" rel="noopener" class="contact-card">
-            <div class="contact-icon">in</div>
-            <h3>LinkedIn</h3>
-            <p>linkedin.com/in/hamzaidrees2002</p>
-          </a>
-
-          <a href="tel:+923067566528" class="contact-card">
-            <div class="contact-icon">&#9742;</div>
-            <h3>Phone</h3>
-            <p>+92 306 7566528</p>
-          </a>
-
-          <div class="contact-card">
-            <div class="contact-icon">&#9679;</div>
-            <h3>Location</h3>
-            <p>Pakistan</p>
-          </div>
-
+        <div class="svc-card reveal">
+          <div class="svc-num">01</div>
+          <h3>REST API Development</h3>
+          <p>Scalable RESTful APIs with Node.js and Express.js — versioning, validation, pagination, and Swagger documentation included.</p>
         </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">02</div>
+          <h3>Database Design</h3>
+          <p>Schema design and optimization for PostgreSQL and MongoDB. Migrations, indexing, Redis caching, and multi-tenant architectures.</p>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">03</div>
+          <h3>Background Job Systems</h3>
+          <p>Reliable async processing with BullMQ and Redis. Scheduled tasks, job queues, retry logic, and real-time progress tracking.</p>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">04</div>
+          <h3>AI & RAG Integration</h3>
+          <p>Integrate OpenAI, Claude, and build RAG pipelines with vector stores for intelligent search, generation, and LLM-powered features.</p>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">05</div>
+          <h3>Cloud & Serverless</h3>
+          <p>AWS Lambda for serverless functions, S3 for file storage, SQS for messaging. Deploy and scale cloud infrastructure for your app.</p>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-num">06</div>
+          <h3>Auth & Integrations</h3>
+          <p>JWT, OAuth 2.0, Microsoft Entra ID SSO, email delivery (SendGrid, AWS SES), and third-party API integrations.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="sec-label sec-label-light">06 — Contact</div>
+      <h2 class="contact-headline">Let's work<br>together.</h2>
+      <p class="contact-sub">Have a project in mind or want to talk backend? I'm available and would love to hear from you.</p>
+      <a href="mailto:hamzaidrees083@gmail.com" class="contact-email">hamzaidrees083@gmail.com</a>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/hamzaidrees2002" target="_blank" rel="noopener" class="contact-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="tel:+923067566528" class="contact-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.62 4.53 2 2 0 0 1 3.59 2.37h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.8-1.8a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +92 306 7566528
+        </a>
+        <button class="contact-link cv-download">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume PDF
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Hamza Idrees. All rights reserved.</p>
+    <div class="container footer-inner">
+      <span class="footer-logo">HI<span class="dot">.</span></span>
+      <p>&copy; 2026 Hamza Idrees — Built with care.</p>
+      <a href="#hero" class="back-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      </a>
     </div>
   </footer>
 
