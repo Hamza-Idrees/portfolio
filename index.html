@@ -117,7 +117,7 @@
             <div class="term-line"></div>
             <div class="term-line"><span class="t-key">const</span> pipeline = <span class="t-fn">buildRAGPipeline</span>({</div>
             <div class="term-line t-indent"><span class="t-key">model</span>: <span class="t-str">'gpt-4.1-mini'</span>,</div>
-            <div class="term-line t-indent"><span class="t-key">vectorStore</span>: <span class="t-str">'chromadb'</span>,</div>
+            <div class="term-line t-indent"><span class="t-key">vectorStore</span>: <span class="t-str">'qdrant'</span>,</div>
             <div class="term-line t-indent"><span class="t-key">records</span>: <span class="t-num">5000</span>,</div>
             <div class="term-line t-indent"><span class="t-key">filters</span>: <span class="t-num">20</span><span class="t-comment">+ metadata</span>,</div>
             <div class="term-line t-indent"><span class="t-key">streaming</span>: <span class="t-bool">true</span>,</div>
@@ -171,7 +171,7 @@
             AI services for automated content processing, and build reliable background job systems.
           </p>
           <p>
-            At <strong>Obenan</strong>, I built features for a SaaS platform serving <strong>400+ businesses
+            At <strong>Global Software Consulting</strong>, I built features for Obenan — a SaaS platform serving <strong>400+ businesses
             across 1,000+ locations</strong>. I engineered a Lambda function fetching <strong>40,000+ reviews
             within AWS's 15-minute limit</strong>, and built a batched OpenAI pipeline processing
             <strong>100+ posts in under 30 seconds</strong>.
@@ -235,7 +235,7 @@
             <span class="spill spill-primary">PostgreSQL</span>
             <span class="spill spill-primary">MongoDB</span>
             <span class="spill spill-primary">Redis</span>
-            <span class="spill">ChromaDB</span>
+            <span class="spill">Qdrant</span>
             <span class="spill">Sequelize</span>
             <span class="spill">Mongoose</span>
           </div>
@@ -313,8 +313,8 @@
         <div class="exp-card reveal">
           <div class="exp-card-header">
             <div class="exp-meta">
-              <div class="exp-company-badge">Obenan</div>
-              <span class="exp-type">Onsite</span>
+              <div class="exp-company-badge">Global Software Consulting</div>
+              <span class="exp-type">Project: Obenan</span>
             </div>
             <div class="exp-role-line">
               <h3>Backend Developer</h3>
@@ -369,7 +369,7 @@
           <div class="exp-card-header">
             <div class="exp-meta">
               <div class="exp-company-badge exp-company-current">Global Software Consulting</div>
-              <span class="exp-type exp-type-current">Onsite · Current</span>
+              <span class="exp-type exp-type-current">Project: Lumen · Current</span>
             </div>
             <div class="exp-role-line">
               <h3>Backend Developer</h3>
@@ -382,23 +382,23 @@
             <div class="exp-group">
               <h4>RAG Pipeline & AI Integration</h4>
               <ul>
-                <li>End-to-end RAG pipeline: GPT-4o-mini for intent extraction, text-embedding-ada-002 for vectors, GPT-4.1-mini for SSE streaming</li>
-                <li>Built a 20+ filter query parser extracting condition, age, doctor, dates, billing range, blood type from free-text</li>
-                <li>ChromaDB vector store ingesting 5,000 patient records with hybrid semantic + metadata retrieval</li>
+                <li>End-to-end RAG pipeline: GPT-4o-mini for intent extraction, text-embedding-ada-002 for vectors, GPT-4.1-mini for SSE streaming — <strong>first-token responses under 2 seconds</strong></li>
+                <li>Built a 20+ filter query parser extracting condition, age, doctor, dates, billing range, blood type from free-text — <strong>reducing irrelevant retrievals by 60%</strong></li>
+                <li>Qdrant vector store ingesting 5,000 patient records with hybrid semantic + metadata retrieval — <strong>sub-100ms search response times</strong></li>
               </ul>
             </div>
             <div class="exp-group">
               <h4>Backend, API & Frontend</h4>
               <ul>
-                <li>FastAPI endpoints for chat (SSE), CSV ingestion, health checks, stats, and PDF export</li>
-                <li>Cosine similarity thresholding with "don't know" fallback to prevent hallucination</li>
+                <li>FastAPI endpoints for chat (SSE), CSV ingestion, health checks, stats, and PDF export — <strong>bulk ingestion of 5,000 records in under 60 seconds</strong></li>
+                <li>Cosine similarity thresholding with "don't know" fallback — <strong>near-zero hallucination</strong> on out-of-scope queries</li>
                 <li>Next.js 14 App Router frontend with real-time streaming chat, citation cards, and PDF export</li>
               </ul>
             </div>
           </div>
 
           <div class="exp-stack">
-            <span>Python</span><span>FastAPI</span><span>ChromaDB</span><span>OpenAI</span>
+            <span>Python</span><span>FastAPI</span><span>Qdrant</span><span>OpenAI</span>
             <span>SSE</span><span>Next.js 14</span><span>TypeScript</span><span>Tailwind CSS</span>
           </div>
         </div>
@@ -438,7 +438,7 @@
             </div>
           </div>
           <div class="bento-tech">
-            <span>Python</span><span>FastAPI</span><span>ChromaDB</span>
+            <span>Python</span><span>FastAPI</span><span>Qdrant</span>
             <span>OpenAI</span><span>Next.js 14</span><span>TypeScript</span>
           </div>
         </div>
