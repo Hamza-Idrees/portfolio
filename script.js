@@ -1,7 +1,7 @@
 // ===== CV DOWNLOAD =====
 function downloadCV() {
   const a = document.createElement('a');
-  a.href = 'HamzaIdrees-Resume.pdf';
+  a.href = 'HamzaIdrees.pdf';
   a.download = 'HamzaIdrees-Resume.pdf';
   document.body.appendChild(a);
   a.click();
