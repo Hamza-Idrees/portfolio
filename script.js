@@ -2,7 +2,7 @@
 function downloadCV() {
   const a = document.createElement('a');
   a.href = 'HamzaIdrees.pdf';
-  a.download = 'HamzaIdrees-Resume.pdf';
+  a.download = 'HamzaIdrees.pdf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
